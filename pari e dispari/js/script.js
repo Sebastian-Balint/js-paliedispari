@@ -26,3 +26,23 @@ function isEven(number) {
     return "la somma è dispari. Hai perso!";
   }
 }
+
+// Chiediamo numero all'utente
+
+let userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
+
+console.log("il tuo numero: ", userNumber);
+
+let computerNumber = numberGenerator();
+
+console.log("il numero del computer: ", computerNumber);
+
+//Dichiarare variabile che somma i due numeri
+
+let numbersSum = userNumber + computerNumber;
+
+console.log("la loro somma: ", numbersSum);
+
+//stampare funzione applicata a somma
+
+console.log(isEven(numbersSum));
